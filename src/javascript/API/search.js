@@ -7,9 +7,7 @@ const modalSettings = () => {
     searchButton.addEventListener('click', (event) => {
         event.preventDefault();
         
-        setTimeout(() => {
-            mainModal.style.display = `block`;
-        }, 3000);
+        setTimeout(() => {mainModal.style.display = `block`;}, 3000);
 
         const searchCountryData = async () => {
             const inputValue = searchInput.value;
