@@ -19,10 +19,10 @@ const modalSettings = () => {
             const getCountryInfo = () => {
                 let countryInfo = '';
                 countryInfo += `
+                    <h1 class="country-modal-name">${responseInJson[0].name.common} (${responseInJson[0].cioc})</h1>
                     <div class="country-modal-info">
                         <img class="country-modal-image" src="${responseInJson[0].flags.svg}" />
                         <div class="country-modal-title">
-                            <h1 class="country-modal-name">${responseInJson[0].name.common} (${responseInJson[0].cioc})</h1>
                             <h1 class="country-modal-official">Official Name: <strong>${responseInJson[0].name.official}</strong></h1>
                             <div class="country-modal-territory">
                                 <h2 class="modal-territory-capital">Capital: <strong>${responseInJson[0].capital}</strong></h2>
