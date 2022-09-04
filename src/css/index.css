@@ -9,9 +9,10 @@
     --White: #FFFFFF;
     --VL_Gray: #FAFAFA;
     --VD_Blue: #202C37;
-    --VD_Blue: #111517;
     --Dark_Blue: #2B3945;
     --Dark_Gray: #858585;
+
+    --Text_Dark_Blue: #111517;
 }
 
 * {
@@ -20,7 +21,10 @@
     box-sizing: border-box;
 }
 
-body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
+body {
+    background-color: var(--VD_Blue);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
 
 /* HEADER */
 .header {
@@ -34,6 +38,8 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     box-shadow: 0 2px 16px #00000029;
 }
 
+.header-title {color: var(--White);}
+
 .header-button {
     width: 40px;
     height: 40px;
@@ -41,22 +47,22 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 
     cursor: pointer;
     font-size: 16px;
-    color: #00000052;
+    color: var(--White);
     
     transition: .5s ease all;
 
     border-radius: 50%;
-    border: 1px solid #00000052;
     background-color: transparent;
+    border: 1px solid var(--White);
 }
 
 .header-button:hover {
-    color: #FFFFFF;
+    color: var(--VD_Blue);
 
     transition: .5s ease all;
 
-    background-color: #000000;
-    border: 1px solid #00000052;
+    background-color: var(--White);
+    border: 1px solid var(--White);
 }
 
 /* MAIN */
@@ -81,23 +87,17 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     padding: 8px;
 
     font-size: 16px;
-
-    transition: .5s ease all;
+    color: var(--White);
 
     outline: none;
     border-top-left-radius: 8px;
-    border: 1px solid #00000052;
+    border: 1px solid var(--White);
     border-bottom-left-radius: 8px;
+    background-color: var(--VD_Blue);
 }
 
-.search-input:focus {
-    transition: .5s ease all;
-
-    border: 1px solid #0000007F;
-}
-
-.search-input:focus::placeholder {
-    color: #000000;
+.search-input::placeholder {
+    color: var(--White);
 
     transition: .5s ease all;
 }
@@ -108,32 +108,36 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 
     cursor: pointer;
     font-size: 16px;
-    color: #000000;
+    color: var(--White);
 
     transition: .5s ease all;
 
     outline: none;
     border-top-right-radius: 8px;
-    border: 1px solid #00000052;
-    background-color: transparent;
+    border: 1px solid var(--White);
     border-bottom-right-radius: 8px;
+    background-color: var(--VD_Blue);
 }
 
 .search-button:hover {
-    color: #FFFFFF;
+    color: var(--VD_Blue);
 
     transition: .5s ease all;
 
-    background-color: #000000;
-    border: 1px solid #00000052;
+    background-color: var(--White);
+    border: 1px solid var(--White);
 }
 
 /* FILTER ARTICLE */
 .filter-select {
     width: 256px;
     padding: 8px;
+    
+    color: var(--White);
 
     border-radius: 8px;
+    border: 1px solid var(--White);
+    background-color: var(--VD_Blue);
 }
 
 /* MAIN COUNTRIES */
@@ -148,30 +152,30 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 }
 
 .country {
-    width: 320px;
+    width: 300px;
     display: flex;
     flex-direction: column;
 
-    border-radius: 16px;
-    background-color: #F2F2F2;
+    background-color: var(--Dark_Blue);
     box-shadow: 0 2px 16px #00000029;
 }
 
 .country-img {
-    width: 320px;
-    height: 213px;
-    border-radius: 16px;
+    width: 300px;
+    height: 193px;
 }
 
 .country-info {
-    padding: 16px;
+    padding: 24px;
     margin: 16px 0;
+
+    color: var(--White);
 }
 
 .country-name {
     padding: 6px 0;
 
-    font-size: 32px;
+    font-size: 24px;
     font-weight: normal;
 }
 
@@ -180,7 +184,7 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 .country-population {
     padding: 6px 0;
 
-    font-size: 24px;
+    font-size: 18px;
     font-weight: normal;
 }
 
@@ -204,9 +208,8 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     padding: 20px;
     margin: 5% auto;
 
-    border-radius: 16px;
-    border: 1px solid #888888;
-    background-color: #FEFEFE;
+    border-radius: 8px;
+    background-color: var(--VD_Blue);
 }
 
 .country-modal-info {
@@ -227,7 +230,8 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     width: 256px;
     margin-bottom: 56px;
 
-    font-size: 32px;
+    font-size: 56px;
+    color: var(--White);
 }
 
 .country-modal-native,
@@ -238,6 +242,7 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 .modal-territory-subregion {
     font-size: 24px;
     font-weight: normal;
+    color: var(--White);
 }
 
 .country-modal-territory {
