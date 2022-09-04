@@ -6,7 +6,10 @@ const searchButton = document.querySelector('.search-button');
 const modalSettings = () => {
     searchButton.addEventListener('click', (event) => {
         event.preventDefault();
-        mainModal.style.display = `block`;
+        
+        setTimeout(() => {
+            mainModal.style.display = `block`;
+        }, 3000);
 
         const searchCountryData = async () => {
             const inputValue = searchInput.value;
