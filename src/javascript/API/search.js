@@ -29,6 +29,9 @@ const modalSettings = () => {
                                 <h2 class="modal-territory-region">Region: <strong>${responseInJson[0].region}</strong></h2>
                                 <h2 class="modal-territory-subregion">Sub Region: <strong>${responseInJson[0].subregion}</strong></h2>
                             </div>
+                            <div class="country-modal-population">
+                                <h2 class="modal-population-denomyn">Demonym of ${responseInJson[0].name.common}: <strong>${responseInJson[0].demonyms.eng.m}</strong></h2>
+                            </div>
                         </div>
                     </div>
                 `;
