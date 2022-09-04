@@ -135,11 +135,11 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     display: grid;
     grid-gap: 48px;
     padding-inline-start: 32px;
-    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .country {
-    width: 424px;
+    width: 320px;
     display: flex;
     flex-direction: column;
 
@@ -149,8 +149,8 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 }
 
 .country-img {
-    width: 424px;
-    height: 256px;
+    width: 320px;
+    height: 213px;
     border-radius: 16px;
 }
 
@@ -205,12 +205,23 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     margin: 16px 0;
 
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
 }
 
 .country-modal-image {
     width: 512px;
     height: 296px;
-    margin-bottom: 64px;
+    margin-right: 64px;
+}
+
+.country-modal-name {
+    margin-bottom: 56px;
+
+    font-size: 32px;
+}
+
+.country-modal-native,
+.country-modal-official {
+    font-size: 24px;
+    font-weight: normal;
 }
