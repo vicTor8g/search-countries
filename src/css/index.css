@@ -32,12 +32,12 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 
     cursor: pointer;
     font-size: 16px;
-    color: #000000;
+    color: #00000052;
     
     transition: .5s ease all;
 
     border-radius: 50%;
-    border: 1px solid #000000;
+    border: 1px solid #00000052;
     background-color: transparent;
 }
 
@@ -47,7 +47,7 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     transition: .5s ease all;
 
     background-color: #000000;
-    border: 1px solid #000000;
+    border: 1px solid #00000052;
 }
 
 /* MAIN */
@@ -73,9 +73,24 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 
     font-size: 16px;
 
+    transition: .5s ease all;
+
     outline: none;
     border-top-left-radius: 8px;
+    border: 1px solid #00000052;
     border-bottom-left-radius: 8px;
+}
+
+.search-input:focus {
+    transition: .5s ease all;
+
+    border: 1px solid #0000007F;
+}
+
+.search-input:focus::placeholder {
+    color: #000000;
+
+    transition: .5s ease all;
 }
 
 .search-button {
@@ -84,10 +99,24 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 
     cursor: pointer;
     font-size: 16px;
+    color: #000000;
+
+    transition: .5s ease all;
 
     outline: none;
     border-top-right-radius: 8px;
+    border: 1px solid #00000052;
+    background-color: transparent;
     border-bottom-right-radius: 8px;
+}
+
+.search-button:hover {
+    color: #FFFFFF;
+
+    transition: .5s ease all;
+
+    background-color: #000000;
+    border: 1px solid #00000052;
 }
 
 /* FILTER ARTICLE */
