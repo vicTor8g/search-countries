@@ -9,7 +9,33 @@
         <title>Search Countries</title>
     </head>
     <body>
-        
+        <header class="header">
+            <h1 class="header-title">SearchCountries</h1>
+            <button class="header-button">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </header>
+        <main class="main">
+            <section class="main-search">
+                <article class="search-article">
+                    <input type="text" class="search-input" placeholder="Search for a country...">
+                    <button class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </article>
+                <article class="filter-article">
+                    <select class="filter-select">
+                        <option value="0" class="select-option">Filter By Region</option>
+                        <option value="1" class="select-option">Africa</option>
+                        <option value="2" class="select-option">America</option>
+                        <option value="3" class="select-option">Asia</option>
+                        <option value="4" class="select-option">Europe</option>
+                        <option value="5" class="select-option">Oceania</option>
+                    </select>
+                </article>
+            </section>
+        </main>
     </body>
     <script src="./src/javascript/API/main.js"></script>
+    <script src="https://kit.fontawesome.com/e0ecda8b57.js" crossorigin="anonymous"></script>
 </html>
