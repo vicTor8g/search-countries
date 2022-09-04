@@ -22,6 +22,7 @@ const modalSettings = () => {
                         <img class="country-modal-image" src="${responseInJson[0].flags.svg}" />
                         <div class="country-modal-text">
                             <h1 class="country-modal-name">${responseInJson[0].name.common}</h1>
+                            <h1 class="country-modal-official">Official Name: <strong>${responseInJson[0].name.official}</strong></h1>
                         </div>
                     </div>
                 `;
