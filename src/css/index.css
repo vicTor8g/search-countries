@@ -221,23 +221,19 @@ body {
 }
 
 .country-modal-image {
-    margin: auto;
     width: 680px;
     height: 466px;
     margin-right: 32px;
 }
 
 .country-modal-name {
-    margin: auto;
-    width: 680px;
+    width: 320px;
     padding: 8px;
     margin-top: 32px;
     margin-bottom: 64px;
 
     font-size: 48px;
     color: var(--White);
-    box-shadow: 0 2px 16px #00000029;
-
 }
 
 .country-modal-native,
@@ -245,15 +241,12 @@ body {
 .country-modal-population,
 .modal-territory-capital,
 .modal-territory-region,
-.modal-territory-subregion {
-    padding: 0 8px;
-
+.modal-territory-subregion,
+.modal-population-denomyn {
     font-size: 24px;
     font-weight: normal;
     color: var(--White);
 }
 
-.country-modal-territory {
-    margin-top: 16px;
-
-}
+.country-modal-territory,
+.country-modal-population {margin-top: 16px;}
