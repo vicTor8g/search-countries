@@ -110,6 +110,8 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     font-weight: normal;
 }
 
+.country-region,
+.country-capital,
 .country-population {
     padding: 6px 0;
 
