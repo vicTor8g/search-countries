@@ -10,6 +10,7 @@ const applicationLogic = () => {
             const responseInJson = await fetchResponse.json();
 
             createCountryDiv(responseInJson);
+            console.log(responseInJson);
         } catch (error) {
             console.log(`Error: ${error}`);
         }
@@ -21,10 +22,13 @@ const applicationLogic = () => {
         countryData.forEach(data => {
             countryElements += `
                 <article class="country">
-                    <h1 class="country-name">United States</h1>
-                    <h2 class="country-region">Americas</h2>
-                    <h2 class="country-population">323.123.424</h2>
-                    <h2 class="country-capital">Washington D.C</h2>
+                    <img src="${data.flags.png}" class="country-img"/>
+                    <div class="country-info">
+                        <h1 class="country-name">${data.name.common}</h1>
+                        <h2 class="country-region">Americas</h2>
+                        <h2 class="country-population">323.123.424</h2>
+                        <h2 class="country-capital">Washington D.C</h2>
+                    </div>
                 </article>
             `;
         });
