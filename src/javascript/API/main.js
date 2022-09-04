@@ -27,7 +27,7 @@ const applicationLogic = () => {
                         <h1 class="country-name">${data.name.common}</h1>
                         <h2 class="country-region">Americas</h2>
                         <h2 class="country-population">323.123.424</h2>
-                        <h2 class="country-capital">Washington D.C</h2>
+                        <h2 class="country-capital">${data.capital}</h2>
                     </div>
                 </article>
             `;
