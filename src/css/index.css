@@ -205,7 +205,7 @@ body {
 
 .modal-content {
     width: 90%;
-    padding: 20px;
+    padding: 8px;
     margin: 5% auto;
 
     border-radius: 8px;
@@ -213,25 +213,31 @@ body {
 }
 
 .country-modal-info {
-    padding: 8px;
     margin: 16px 0;
+    padding: 0 16px;
 
     display: flex;
     align-items: flex-start;
 }
 
 .country-modal-image {
-    width: 640px;
-    height: 426px;
-    margin-right: 64px;
+    margin: auto;
+    width: 680px;
+    height: 466px;
+    margin-right: 32px;
 }
 
 .country-modal-name {
-    width: 256px;
-    margin-bottom: 56px;
+    margin: auto;
+    width: 680px;
+    padding: 8px;
+    margin-top: 32px;
+    margin-bottom: 64px;
 
-    font-size: 56px;
+    font-size: 48px;
     color: var(--White);
+    box-shadow: 0 2px 16px #00000029;
+
 }
 
 .country-modal-native,
@@ -240,6 +246,8 @@ body {
 .modal-territory-capital,
 .modal-territory-region,
 .modal-territory-subregion {
+    padding: 0 8px;
+
     font-size: 24px;
     font-weight: normal;
     color: var(--White);
@@ -248,8 +256,4 @@ body {
 .country-modal-territory {
     margin-top: 16px;
 
-    display: grid;
-    grid-gap: 8px;
-    padding-inline-start: 0;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
