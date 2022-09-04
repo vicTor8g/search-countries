@@ -1,6 +1,4 @@
 const allCountriesURL = `https://restcountries.com/v3.1/all`;
-
-const searchButton = document.querySelector('.search-button');
 const mainCountries = document.querySelector('.main-countries');
 
 const applicationLogic = () => {
@@ -39,5 +37,3 @@ const applicationLogic = () => {
     createCountryDiv();
 }
 applicationLogic();
-
-//searchButton.addEventListener('click', applicationLogic);
