@@ -72,3 +72,14 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 
     border-radius: 8px;
 }
+
+/* MAIN COUNTRIES */
+.main-countries {
+    padding: 16px;
+    margin: 64px 0;
+
+    display: grid;
+    grid-gap: 64px;
+    padding-inline-start: 0;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+}
