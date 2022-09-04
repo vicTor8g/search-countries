@@ -139,8 +139,7 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 }
 
 .country {
-    padding: 8px;
-
+    width: 424px;
     display: flex;
     flex-direction: column;
 
@@ -155,7 +154,10 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     border-radius: 16px;
 }
 
-.country-info {margin: 16px 0;}
+.country-info {
+    padding: 16px;
+    margin: 16px 0;
+}
 
 .country-name {
     padding: 6px 0;
