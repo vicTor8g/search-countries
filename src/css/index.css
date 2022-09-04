@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/roboto-regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
+
+/* HEADER */
+.header {
+    padding: 16px 24px;
+    margin-bottom: 16px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 2px 16px #00000029;
+}
+
+/* MAIN */
+.main {
+    margin: 16px 0;
+    padding: 16px 24px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN SEARCH */
+.main-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* SEARCH ARTICLE */
+.search-input {
+    width: 512px;
+    padding: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.search-button {
+    width: 64px;
+    padding: 8px;
+
+    cursor: pointer;
+    font-size: 16px;
+
+    outline: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* FILTER ARTICLE */
+.filter-select {
+    width: 256px;
+    padding: 8px;
+
+    border-radius: 8px;
+}
