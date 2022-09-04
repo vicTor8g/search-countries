@@ -25,6 +25,31 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     box-shadow: 0 2px 16px #00000029;
 }
 
+.header-button {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    
+    transition: .5s ease all;
+
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-color: transparent;
+}
+
+.header-button:hover {
+    color: #FFFFFF;
+
+    transition: .5s ease all;
+
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
 /* MAIN */
 .main {
     margin: 16px 0;
