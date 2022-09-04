@@ -133,8 +133,8 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     margin: 64px 0;
 
     display: grid;
-    grid-gap: 64px;
-    padding-inline-start: 0;
+    grid-gap: 48px;
+    padding-inline-start: 32px;
     grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
 }
 
