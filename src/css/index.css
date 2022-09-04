@@ -81,7 +81,7 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     display: grid;
     grid-gap: 64px;
     padding-inline-start: 0;
-    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
 }
 
 .country {
@@ -94,13 +94,18 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     box-shadow: 0 2px 16px #00000029;
 }
 
-.country-img {border-radius: 16px;}
+.country-img {
+    width: 300px;
+    height: 256px;
+    
+    border-radius: 16px;
+}
 
 .country-info {margin: 16px 0;}
 
 .country-name {
     padding: 6px 0;
-    
+
     font-size: 32px;
     font-weight: normal;
 }
