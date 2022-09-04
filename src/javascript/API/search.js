@@ -18,7 +18,12 @@ const modalSettings = () => {
             const getCountryInfo = () => {
                 let countryInfo = '';
                 countryInfo += `
-                    <h1>${responseInJson[0].name.common}</h1>
+                    <div class="country-modal-info">
+                        <img class="country-modal-image" src="${responseInJson[0].flags.svg}" />
+                        <div class="country-modal-text">
+                            <h1 class="country-modal-name">${responseInJson[0].name.common}</h1>
+                        </div>
+                    </div>
                 `;
 
                 modalContent.innerHTML = countryInfo;
