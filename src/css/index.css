@@ -83,3 +83,24 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     padding-inline-start: 0;
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 }
+
+.country {
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #00000029;
+}
+
+.country-img {border-radius: 16px;}
+
+.country-info {margin: 16px 0;}
+
+.country-name {
+    padding: 6px 0;
+    
+    font-size: 32px;
+    font-weight: normal;
+}
