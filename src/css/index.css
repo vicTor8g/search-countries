@@ -5,6 +5,15 @@
     src: url('./fonts/roboto-regular.ttf') format('truetype');
 }
 
+:root {
+    --White: #FFFFFF;
+    --VL_Gray: #FAFAFA;
+    --VD_Blue: #202C37;
+    --VD_Blue: #111517;
+    --Dark_Blue: #2B3945;
+    --Dark_Gray: #858585;
+}
+
 * {
     margin: 0;
     padding: 0;
