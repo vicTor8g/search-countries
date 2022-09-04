@@ -227,7 +227,7 @@ body {
 }
 
 .country-modal-name {
-    width: 320px;
+    width: 392px;
     padding: 8px;
     margin-top: 32px;
     margin-bottom: 64px;
@@ -242,7 +242,8 @@ body {
 .modal-territory-capital,
 .modal-territory-region,
 .modal-territory-subregion,
-.modal-population-denomyn {
+.modal-population-denomyn,
+.modal-population-value {
     font-size: 24px;
     font-weight: normal;
     color: var(--White);
