@@ -215,9 +215,15 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
 }
 
 .country-modal-name {
+    width: 256px;
+    padding: 8px;
     margin-bottom: 56px;
 
     font-size: 32px;
+    text-align: center;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 16px #00000029;
 }
 
 .country-modal-native,
