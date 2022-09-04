@@ -81,7 +81,7 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     display: grid;
     grid-gap: 64px;
     padding-inline-start: 0;
-    grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
 }
 
 .country {
@@ -91,13 +91,13 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     flex-direction: column;
 
     border-radius: 16px;
+    background-color: #F2F2F2;
     box-shadow: 0 2px 16px #00000029;
 }
 
 .country-img {
-    width: 300px;
+    width: 424px;
     height: 256px;
-    
     border-radius: 16px;
 }
 
@@ -107,5 +107,12 @@ body {font-family: 'Roboto', Arial, Helvetica, sans-serif;}
     padding: 6px 0;
 
     font-size: 32px;
+    font-weight: normal;
+}
+
+.country-population {
+    padding: 6px 0;
+
+    font-size: 24px;
     font-weight: normal;
 }
