@@ -22,12 +22,12 @@ const applicationLogic = () => {
         countryData.forEach(data => {
             countryElements += `
                 <article class="country">
-                    <img src="${data.flags.svg}" class="country-img"/>
+                    <img src="${data.flags.png}" class="country-img"/>
                     <div class="country-info">
                         <h1 class="country-name">${data.name.common}</h1>
-                        <h2 class="country-region">Americas</h2>
-                        <h2 class="country-population">323.123.424</h2>
-                        <h2 class="country-capital">${data.capital}</h2>
+                        <h2 class="country-region"><strong>Region:</strong> Americas</h2>
+                        <h2 class="country-population"><strong>Population:</strong> 323.123.424</h2>
+                        <h2 class="country-capital"><strong>Capital:</strong> ${data.capital}</h2>
                     </div>
                 </article>
             `;
