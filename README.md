@@ -34,7 +34,7 @@
 
 ## About
 
-:us: Search Countries - An application that provides daily weather forecast data for a given location, which can and should be searched by the user.
+:us: Search Countries - This application allows the user to view various information about dozens of countries, such as population, region, flag, borders, among others.
 
 ---
 
