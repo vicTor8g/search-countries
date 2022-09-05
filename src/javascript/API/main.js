@@ -27,7 +27,7 @@ const applicationLogic = () => {
     const createCountryDiv = (countryData) => {
         let countryElements = '';
 
-        countryData.forEach(data => {
+        countryData?.forEach(data => {
             countryElements += `
                 <article class="country">
                     <img src="${data.flags.png}" class="country-img"/>
