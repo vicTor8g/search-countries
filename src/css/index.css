@@ -272,3 +272,12 @@ body::-webkit-scrollbar {display: none;}
     --Two: #FAFAFA;
     --Thr: #DFDFDF;
 }
+
+/* ERROR */
+.error {
+    color: #FF0000;
+    transition: .5s ease all;
+    border: 1px solid #FF0000;
+}
+
+.error::placeholder {color: #FF0000}
