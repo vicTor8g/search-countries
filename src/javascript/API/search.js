@@ -31,8 +31,8 @@ const modalSettings = () => {
                             <div class="country-modal-title">
                                 <h1 class="country-modal-official">Common Name: <strong>${responseInJson[0].name.common}</strong></h1>
                                 <div class="country-modal-territory">
-                                    <h2 class="modal-territory-capital">Capital: <strong>${responseInJson[0].capital}</strong></h2>
                                     <h2 class="modal-territory-region">Region: <strong>${responseInJson[0].region}</strong></h2>
+                                    <h2 class="modal-territory-capital">Capital: <strong>${responseInJson[0].capital}</strong></h2>
                                     <h2 class="modal-territory-subregion">Sub Region: <strong>${responseInJson[0].subregion}</strong></h2>
                                 </div>
                                 <div class="country-modal-population">
