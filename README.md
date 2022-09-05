@@ -1,5 +1,5 @@
 <h1 align="center">
-   :it: <a href="#"> Search Countries </a>
+   :brazil: <a href="#"> Search Countries </a>
 </h1>
 
 <p align="center">
@@ -34,7 +34,7 @@
 
 ## About
 
-:it: Search Countries - This application allows the user to view various information about dozens of countries, such as population, region, flag, borders, among others.
+:brazil: Search Countries - This application allows the user to view various information about dozens of countries, such as population, region, flag, borders, among others.
 
 ---
 
