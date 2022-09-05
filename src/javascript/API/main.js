@@ -18,15 +18,10 @@ const applicationLogic = () => {
     });
 
     const getCountriesData = async (allCountriesURL) => {
-        console.log(allCountriesURL);
-        try {
-            const fetchResponse = await fetch(allCountriesURL);
-            const responseInJson = await fetchResponse.json();
+        const fetchResponse = await fetch(allCountriesURL);
+        const responseInJson = await fetchResponse.json();
 
-            createCountryDiv(responseInJson);
-        } catch (error) {
-            console.log(`Error: ${error}`);
-        }
+        createCountryDiv(responseInJson);
     }
     
     const createCountryDiv = (countryData) => {
