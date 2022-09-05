@@ -43,7 +43,7 @@
 - [X] Dark Mode
 - [x] CSS Flexbox
 - [x] Search Countries
-- [ ] Responsive Design
+- [x] Responsive Design
 - [x] Consume API (OpenWeather)
 
 ---
