@@ -274,8 +274,9 @@ body::-webkit-scrollbar {display: none;}
 }
 
 .country-modal-territory,
-.country-modal-population,
-.country-modal-bordes {margin-top: 16px;}
+.country-modal-population {margin-top: 16px;}
+
+.country-modal-bordes {margin-top: 8px;}
 
 /* DARK MODE */
 .dark-mode:root {
