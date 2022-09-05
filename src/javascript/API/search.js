@@ -23,21 +23,24 @@ const modalSettings = () => {
             } else {
                 setTimeout(() => {mainModal.style.display = `block`;}, 2500);
 
+                const bordersCountryNames = [];
                 const nameCountriesURL = `https://restcountries.com/v3.1/name/${inputValue}`;
 
                 const fetchResponse = await fetch(nameCountriesURL);
                 const responseInJson = await fetchResponse.json();
 
-                const getCountryBorders = async () => {
-                    const countryBorders = responseInJson[0].borders.map( async item => {
-                        const countryName = `https://restcountries.com/v3.1/alpha/${item.toLowerCase()}`;
+                responseInJson[0].borders.map(async item => {
+                    const countryName = `https://restcountries.com/v3.1/alpha/${item.toLowerCase()}`;
     
-                        const nameFetch = await fetch(countryName);
-                        const nameInJson = await nameFetch.json();
-    
-                        console.log(nameInJson);
-                    });
-                }
+                    const nameFetch = await fetch(countryName);
+                    const nameInJson = await nameFetch.json();
+
+                    bordersCountryNames.push(nameInJson[0].name.common);
+                });
+
+                bordersCountryNames.forEach(element => {
+                    console.log(element);
+                });
     
                 const getCountryInfo = () => {
                     let countryInfo = '';
@@ -59,7 +62,7 @@ const modalSettings = () => {
                                     <h2 class="modal-population-denomyn">Demonym of ${responseInJson[0].name.common}: <strong>${responseInJson[0].demonyms.eng.m}</strong></h2>
                                 </div>
                                 <div class="country-modal-bordes">
-                                    <h2 class="modal-bordes-name">${responseInJson[0].borders.map(item => item)}</h2>
+                                    <h2 class="modal-bordes-name"></h2>
                                 </div>
                             </div>
                         </div>
