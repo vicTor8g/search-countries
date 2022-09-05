@@ -11,7 +11,8 @@ const modalSettings = () => {
             const inputValue = searchInput.value;
 
             if (!inputValue) {
-                window.alert('Error');
+                searchInput.classList.add('error');
+                searchButton.classList.add('error');
             } else {
                 setTimeout(() => {mainModal.style.display = `block`;}, 3000);
 
