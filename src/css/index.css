@@ -26,6 +26,8 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+body::-webkit-scrollbar {display: none;}
+
 /* HEADER */
 .header {
     padding: 16px 24px;
@@ -57,10 +59,14 @@ body {
 }
 
 .header-button:hover {
+    width: 80px;
+
+    text-align: center;
     color: var(--VD_Blue);
 
     transition: .5s ease all;
 
+    border-radius: 8px;
     background-color: var(--White);
     border: 1px solid var(--White);
 }
