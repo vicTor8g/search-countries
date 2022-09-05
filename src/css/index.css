@@ -9,10 +9,6 @@
     --One: #FFFFFF;
     --Two: #202C37;
     --Thr: #2B3945;
-
-    --VL_Gray: #FAFAFA;
-    --Dark_Gray: #858585;
-    --Text_Dark_Blue: #111517;
 }
 
 * {
@@ -22,6 +18,8 @@
 }
 
 body {
+    transition: .5s ease all;
+    
     background-color: var(--Two);
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -159,7 +157,7 @@ body::-webkit-scrollbar {display: none;}
 }
 
 .country {
-    width: 300px;
+    width: 288px;
     display: flex;
     flex-direction: column;
 
@@ -168,7 +166,7 @@ body::-webkit-scrollbar {display: none;}
 }
 
 .country-img {
-    width: 300px;
+    width: 288px;
     height: 193px;
 }
 
@@ -263,3 +261,10 @@ body::-webkit-scrollbar {display: none;}
 
 .country-modal-territory,
 .country-modal-population {margin-top: 16px;}
+
+/* DARK MODE */
+.dark-mode:root {
+    --One: #111517;
+    --Two: #FAFAFA;
+    --Thr: #DFDFDF;
+}
