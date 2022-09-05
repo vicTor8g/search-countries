@@ -48,7 +48,7 @@ const modalSettings = () => {
                                     <h2 class="modal-population-denomyn">Demonym of ${responseInJson[0].name.common}: <strong>${responseInJson[0].demonyms.eng.m}</strong></h2>
                                 </div>
                                 <div class="country-modal-bordes">
-                                    <h2 class="modal-borders-name">Borders: <strong class="borders-value">${responseInJson[0].borders.map(item => item).join(', ')}</strong></h2>
+                                    <h2 class="modal-borders-name">Borders: <strong>${responseInJson[0].borders.map(item => item).join(', ')}</strong></h2>
                                 </div>
                             </div>
                         </div>
