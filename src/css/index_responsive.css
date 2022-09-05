@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .main-search {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-    .search-input {width: 256px;}
+    .search-input {width: 240px;}
 
     .filter-select {
         width: 256px;
