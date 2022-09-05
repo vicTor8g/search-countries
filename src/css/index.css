@@ -161,6 +161,8 @@ body::-webkit-scrollbar {display: none;}
     display: flex;
     flex-direction: column;
 
+    transition: .5s ease all;
+
     background-color: var(--Thr);
     box-shadow: 0 2px 16px #00000029;
 }
@@ -173,6 +175,8 @@ body::-webkit-scrollbar {display: none;}
 .country-info {
     padding: 24px;
     margin: 16px 0;
+
+    transition: .5s ease all;
 
     color: var(--One);
 }
