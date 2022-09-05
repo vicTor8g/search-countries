@@ -1,19 +1,19 @@
 <h1 align="center">
-   :cloud: <a href="#"> Search Countries </a>
+   :us: <a href="#"> Search Countries </a>
 </h1>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vicTor8g/weather-forecast?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vicTor8g/search-countries?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/vicTor8g/weather-forecast">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/vicTor8g/search-countries">
   
-  <a href="https://github.com/vicTor8g/weather-forecast/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vicTor8g/weather-forecast">
+  <a href="https://github.com/vicTor8g/search-countries/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vicTor8g/search-countries">
   </a>
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/vicTor8g/weather-forecast/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/vicTor8g/weather-forecast?style=social">
+   <a href="https://github.com/vicTor8g/search-countries/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/vicTor8g/search-countries?style=social">
   </a> 
 </p>
 
@@ -34,7 +34,7 @@
 
 ## About
 
-:cloud: Weather Forecast - An application that provides daily weather forecast data for a given location, which can and should be searched by the user.
+:us: Search Countries - An application that provides daily weather forecast data for a given location, which can and should be searched by the user.
 
 ---
 
@@ -68,10 +68,10 @@ The following tools were used in the construction of the project:
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
+-   APIs: **[REST Countries](https://restcountries.com/)**
 -   Fonts:  **[Roboto](https://fonts.google.com/specimen/Roboto?query=Roboto)**
 -   Icons:  **[Font Awesome](https://fontawesome.com/)**
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
--   APIs: **[OpenWeatherAPI](https://openweathermap.org/current)** -> **[GeocodingAPI](https://openweathermap.org/api/geocoding-api)**, **[REST Countries](https://restcountries.com/#rest-countries)**
 
 
 ---
