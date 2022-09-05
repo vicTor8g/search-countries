@@ -6,12 +6,12 @@
 }
 
 :root {
-    --White: #FFFFFF;
-    --VL_Gray: #FAFAFA;
-    --VD_Blue: #202C37;
-    --Dark_Blue: #2B3945;
-    --Dark_Gray: #858585;
+    --One: #FFFFFF;
+    --Two: #202C37;
+    --Thr: #2B3945;
 
+    --VL_Gray: #FAFAFA;
+    --Dark_Gray: #858585;
     --Text_Dark_Blue: #111517;
 }
 
@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: var(--VD_Blue);
+    background-color: var(--Two);
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -40,7 +40,7 @@ body::-webkit-scrollbar {display: none;}
     box-shadow: 0 2px 16px #00000029;
 }
 
-.header-title {color: var(--White);}
+.header-title {color: var(--One);}
 
 .header-button {
     width: 40px;
@@ -49,26 +49,26 @@ body::-webkit-scrollbar {display: none;}
 
     cursor: pointer;
     font-size: 16px;
-    color: var(--White);
+    color: var(--One);
     
     transition: .5s ease all;
 
     border-radius: 50%;
     background-color: transparent;
-    border: 1px solid var(--White);
+    border: 1px solid var(--One);
 }
 
 .header-button:hover {
     width: 80px;
 
     text-align: center;
-    color: var(--VD_Blue);
+    color: var(--Two);
 
     transition: .5s ease all;
 
     border-radius: 8px;
-    background-color: var(--White);
-    border: 1px solid var(--White);
+    background-color: var(--One);
+    border: 1px solid var(--One);
 }
 
 /* MAIN */
@@ -93,17 +93,17 @@ body::-webkit-scrollbar {display: none;}
     padding: 8px;
 
     font-size: 16px;
-    color: var(--White);
+    color: var(--One);
 
     outline: none;
     border-top-left-radius: 8px;
-    border: 1px solid var(--White);
+    border: 1px solid var(--One);
     border-bottom-left-radius: 8px;
-    background-color: var(--VD_Blue);
+    background-color: var(--Two);
 }
 
 .search-input::placeholder {
-    color: var(--White);
+    color: var(--One);
 
     transition: .5s ease all;
 }
@@ -114,24 +114,24 @@ body::-webkit-scrollbar {display: none;}
 
     cursor: pointer;
     font-size: 16px;
-    color: var(--White);
+    color: var(--One);
 
     transition: .5s ease all;
 
     outline: none;
     border-top-right-radius: 8px;
-    border: 1px solid var(--White);
+    border: 1px solid var(--One);
     border-bottom-right-radius: 8px;
-    background-color: var(--VD_Blue);
+    background-color: var(--Two);
 }
 
 .search-button:hover {
-    color: var(--VD_Blue);
+    color: var(--Two);
 
     transition: .5s ease all;
 
-    background-color: var(--White);
-    border: 1px solid var(--White);
+    background-color: var(--One);
+    border: 1px solid var(--One);
 }
 
 /* FILTER ARTICLE */
@@ -139,12 +139,12 @@ body::-webkit-scrollbar {display: none;}
     width: 256px;
     padding: 8px;
     
-    color: var(--White);
+    color: var(--One);
 
     outline: none;
     border-radius: 8px;
-    border: 1px solid var(--White);
-    background-color: var(--VD_Blue);
+    border: 1px solid var(--One);
+    background-color: var(--Two);
 }
 
 /* MAIN COUNTRIES */
@@ -163,7 +163,7 @@ body::-webkit-scrollbar {display: none;}
     display: flex;
     flex-direction: column;
 
-    background-color: var(--Dark_Blue);
+    background-color: var(--Thr);
     box-shadow: 0 2px 16px #00000029;
 }
 
@@ -176,7 +176,7 @@ body::-webkit-scrollbar {display: none;}
     padding: 24px;
     margin: 16px 0;
 
-    color: var(--White);
+    color: var(--One);
 }
 
 .country-name {
@@ -216,7 +216,7 @@ body::-webkit-scrollbar {display: none;}
     margin: 5% auto;
 
     border-radius: 8px;
-    background-color: var(--VD_Blue);
+    background-color: var(--Two);
 }
 
 .country-modal-info {
@@ -245,7 +245,7 @@ body::-webkit-scrollbar {display: none;}
 
     font-size: 32px;
     text-align: center;
-    color: var(--White);
+    color: var(--One);
 }
 
 .country-modal-native,
@@ -258,7 +258,7 @@ body::-webkit-scrollbar {display: none;}
 .modal-population-value {
     font-size: 20px;
     font-weight: normal;
-    color: var(--White);
+    color: var(--One);
 }
 
 .country-modal-territory,
