@@ -262,12 +262,20 @@ body::-webkit-scrollbar {display: none;}
 .modal-population-denomyn,
 .modal-population-value {
     font-size: 20px;
-    font-weight: normal;
     color: var(--One);
+    font-weight: normal;
+}
+
+.modal-borders-name {
+    font-size: 20px;
+    color: var(--One);
+    font-weight: normal;
+    text-transform: capitalize;
 }
 
 .country-modal-territory,
-.country-modal-population {margin-top: 16px;}
+.country-modal-population,
+.country-modal-bordes {margin-top: 16px;}
 
 /* DARK MODE */
 .dark-mode:root {
