@@ -11,8 +11,15 @@ const modalSettings = () => {
             const inputValue = searchInput.value;
 
             if (!inputValue) {
-                searchInput.classList.add('error');
-                searchButton.classList.add('error');
+                setTimeout(() => {
+                    searchInput.classList.add('error');
+                    searchButton.classList.add('error');
+                }, 100);
+
+                setInterval(() => {
+                    searchInput.classList.remove('error');
+                    searchButton.classList.remove('error');
+                }, 3000)
             } else {
                 setTimeout(() => {mainModal.style.display = `block`;}, 3000);
 
