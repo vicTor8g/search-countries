@@ -219,6 +219,9 @@ body::-webkit-scrollbar {display: none;}
 
     border-radius: 8px;
     background-color: var(--Two);
+
+    animation-duration: 0.4s;
+    animation-name: animationModal;
 }
 
 .country-modal-info {
@@ -281,3 +284,9 @@ body::-webkit-scrollbar {display: none;}
 }
 
 .error::placeholder {color: #FF0000}
+
+/* ANIMATION */
+@keyframes animationModal {
+    from {top: -200px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
