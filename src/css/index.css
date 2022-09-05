@@ -135,6 +135,7 @@ body {
     
     color: var(--White);
 
+    outline: none;
     border-radius: 8px;
     border: 1px solid var(--White);
     background-color: var(--VD_Blue);
