@@ -21,7 +21,7 @@ const modalSettings = () => {
                     searchButton.classList.remove('error');
                 }, 3000)
             } else {
-                setTimeout(() => {mainModal.style.display = `block`;}, 3000);
+                setTimeout(() => {mainModal.style.display = `block`;}, 2500);
 
                 const nameCountriesURL = `https://restcountries.com/v3.1/name/${inputValue}`;
 
