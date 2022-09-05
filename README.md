@@ -1,5 +1,5 @@
 <h1 align="center">
-   :us: <a href="#"> Search Countries </a>
+   :it: <a href="#"> Search Countries </a>
 </h1>
 
 <p align="center">
@@ -34,7 +34,7 @@
 
 ## About
 
-:us: Search Countries - This application allows the user to view various information about dozens of countries, such as population, region, flag, borders, among others.
+:it: Search Countries - This application allows the user to view various information about dozens of countries, such as population, region, flag, borders, among others.
 
 ---
 
@@ -68,8 +68,8 @@ The following tools were used in the construction of the project:
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
--   APIs: **[REST Countries](https://restcountries.com/)**
 -   Fonts:  **[Roboto](https://fonts.google.com/specimen/Roboto?query=Roboto)**
+-   APIs: **[REST Countries](https://restcountries.com/)**
 -   Icons:  **[Font Awesome](https://fontawesome.com/)**
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
 
