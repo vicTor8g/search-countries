@@ -28,8 +28,6 @@ const applicationLogic = () => {
             console.log(`Error: ${error}`);
         }
     }
-
-    getCountriesData(allCountriesURL);
     
     const createCountryDiv = (countryData) => {
         let countryElements = '';
@@ -51,6 +49,8 @@ const applicationLogic = () => {
         mainCountries.innerHTML = countryElements;
     }
 
+    getCountriesData(allCountriesURL);
+    
     getCountriesData();
     createCountryDiv();
 }
