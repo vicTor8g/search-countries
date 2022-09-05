@@ -221,17 +221,19 @@ body {
 }
 
 .country-modal-image {
-    width: 680px;
-    height: 466px;
-    margin-right: 32px;
+    margin: auto;
+    width: 580px;
+    height: 366px;
+    margin-right: 64px;
 }
 
 .country-modal-name {
-    margin-top: 8px;
-    padding: 8px 16px;
-    margin-bottom: 8px;
+    width: 580px;
+    margin: 8px 0;
+    padding: 8px 0;
 
-    font-size: 48px;
+    font-size: 32px;
+    text-align: center;
     color: var(--White);
 }
 
