@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    .main-search {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .search-input {width: 256px;}
+
+    .filter-select {
+        width: 256px;
+        margin-top: 16px;
+    }
+
+    .main-countries {
+        margin: auto;
+        padding: 8px;
+        margin-top: 16px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
