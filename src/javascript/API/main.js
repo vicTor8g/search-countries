@@ -1,5 +1,6 @@
-const allCountriesURL = `https://restcountries.com/v3.1/all`;
+const filterSelect = document.querySelector('.filter-select');
 const mainCountries = document.querySelector('.main-countries');
+const allCountriesURL = `https://restcountries.com/v3.1/region/asia`;
 
 const applicationLogic = () => {
     const getCountriesData = async () => {
@@ -19,7 +20,7 @@ const applicationLogic = () => {
         countryData.forEach(data => {
             countryElements += `
                 <article class="country">
-                    <img src="${data.flags.png}" class="country-img"/>
+                    <img src="${data.flags.svg}" class="country-img"/>
                     <div class="country-info">
                         <h1 class="country-name">${data.name.common}</h1>
                         <h2 class="country-region"><strong>Region:</strong> ${data.region}</h2>
