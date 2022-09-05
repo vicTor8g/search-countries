@@ -14,7 +14,7 @@ const modalSettings = () => {
                 window.alert('Error');
             } else {
                 setTimeout(() => {mainModal.style.display = `block`;}, 3000);
-                
+
                 const nameCountriesURL = `https://restcountries.com/v3.1/name/${inputValue}`;
 
                 const fetchResponse = await fetch(nameCountriesURL);
@@ -23,9 +23,9 @@ const modalSettings = () => {
                 const getCountryInfo = () => {
                     let countryInfo = '';
                     countryInfo += `
+                        <h1 class="country-modal-name">${responseInJson[0].name.official}</h1>
                         <div class="country-modal-info">
                             <div class="country-modal-div-image">
-                                <h1 class="country-modal-name">${responseInJson[0].name.official}</h1>
                                 <img class="country-modal-image" src="${responseInJson[0].flags.svg}" />
                             </div>
                             <div class="country-modal-title">
@@ -36,8 +36,8 @@ const modalSettings = () => {
                                     <h2 class="modal-territory-subregion">Sub Region: <strong>${responseInJson[0].subregion}</strong></h2>
                                 </div>
                                 <div class="country-modal-population">
-                                    <h2 class="modal-population-denomyn">Demonym of ${responseInJson[0].name.common}: <strong>${responseInJson[0].demonyms.eng.m}</strong></h2>
                                     <h2 class="modal-population-value">Population Total: <strong>${responseInJson[0].population}</strong></h2>
+                                    <h2 class="modal-population-denomyn">Demonym of ${responseInJson[0].name.common}: <strong>${responseInJson[0].demonyms.eng.m}</strong></h2>
                                 </div>
                             </div>
                         </div>
