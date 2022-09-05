@@ -211,7 +211,7 @@ body::-webkit-scrollbar {display: none;}
   }
 
 .modal-content {
-    width: 90%;
+    width: 50%;
     padding: 8px;
     margin: 5% auto;
 
@@ -225,17 +225,21 @@ body::-webkit-scrollbar {display: none;}
 
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .country-modal-image {
     margin: auto;
-    width: 580px;
-    height: 366px;
-    margin-right: 64px;
+    width: 340px;
+    height: 233px;
+}
+
+.country-modal-title {
+    margin: 16px 0;
+    text-align: center;
 }
 
 .country-modal-name {
-    width: 580px;
     margin: 8px 0;
     padding: 8px 0;
 
@@ -252,7 +256,7 @@ body::-webkit-scrollbar {display: none;}
 .modal-territory-subregion,
 .modal-population-denomyn,
 .modal-population-value {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
     color: var(--White);
 }
