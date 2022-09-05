@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 747px) {
     .main-search {
         display: flex;
         align-items: center;
@@ -23,4 +23,8 @@
         align-items: center;
         flex-direction: column;
     }
+}
+
+@media screen and (min-width: 748px) {
+    .search-input {width: 264px;}
 }
