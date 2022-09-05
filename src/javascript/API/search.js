@@ -27,6 +27,17 @@ const modalSettings = () => {
 
                 const fetchResponse = await fetch(nameCountriesURL);
                 const responseInJson = await fetchResponse.json();
+
+                const getCountryBorders = async () => {
+                    const countryBorders = responseInJson[0].borders.map( async item => {
+                        const countryName = `https://restcountries.com/v3.1/alpha/${item.toLowerCase()}`;
+    
+                        const nameFetch = await fetch(countryName);
+                        const nameInJson = await nameFetch.json();
+    
+                        console.log(nameInJson);
+                    });
+                }
     
                 const getCountryInfo = () => {
                     let countryInfo = '';
@@ -46,6 +57,9 @@ const modalSettings = () => {
                                 <div class="country-modal-population">
                                     <h2 class="modal-population-value">Population Total: <strong>${responseInJson[0].population}</strong></h2>
                                     <h2 class="modal-population-denomyn">Demonym of ${responseInJson[0].name.common}: <strong>${responseInJson[0].demonyms.eng.m}</strong></h2>
+                                </div>
+                                <div class="country-modal-bordes">
+                                    <h2 class="modal-bordes-name">${responseInJson[0].borders.map(item => item)}</h2>
                                 </div>
                             </div>
                         </div>
