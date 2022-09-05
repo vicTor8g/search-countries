@@ -1,9 +1,24 @@
 const filterSelect = document.querySelector('.filter-select');
 const mainCountries = document.querySelector('.main-countries');
-const allCountriesURL = `https://restcountries.com/v3.1/region/asia`;
 
 const applicationLogic = () => {
-    const getCountriesData = async () => {
+    let allCountriesURL;
+    allCountriesURL = `https://restcountries.com/v3.1/all`;
+
+    filterSelect.addEventListener('click', () => {
+        const inputRegionValue = document.querySelector('.region-value-input').value = filterSelect.value;
+
+        if (inputRegionValue == 'all') {
+            allCountriesURL = `https://restcountries.com/v3.1/all`;
+        } else {
+            allCountriesURL = `https://restcountries.com/v3.1/region/${inputRegionValue}`;
+        }
+    
+        getCountriesData(allCountriesURL);
+    });
+
+    const getCountriesData = async (allCountriesURL) => {
+        console.log(allCountriesURL);
         try {
             const fetchResponse = await fetch(allCountriesURL);
             const responseInJson = await fetchResponse.json();
@@ -13,6 +28,8 @@ const applicationLogic = () => {
             console.log(`Error: ${error}`);
         }
     }
+
+    getCountriesData(allCountriesURL);
     
     const createCountryDiv = (countryData) => {
         let countryElements = '';
